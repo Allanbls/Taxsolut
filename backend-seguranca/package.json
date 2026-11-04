@@ -1,0 +1,18 @@
+{
+  "name": "taxsolut-backend-seguranca",
+  "version": "1.0.0",
+  "private": true,
+  "description": "API de referência da TaxSolut: contato validado e Área do cliente com MFA, sessão com expiração, rate limit, CORS, logs e criptografia.",
+  "main": "server.js",
+  "scripts": { "start": "node server.js", "segredos": "node scripts/gerar-segredos.js" },
+  "engines": { "node": ">=18" },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "express-rate-limit": "^7.4.0",
+    "express-session": "^1.18.0",
+    "helmet": "^7.1.0",
+    "otplib": "^12.0.1",
+    "pino": "^9.4.0"
+  }
+}
