@@ -1,178 +1,108 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'none'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; base-uri 'self'; form-action 'none'; object-src 'none'; upgrade-insecure-requests">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="referrer" content="strict-origin-when-cross-origin">
-<title>Política de Privacidade | TaxSolut Consultoria Contábil</title>
-<meta name="description" content="Como a TaxSolut Consultoria Contábil trata os seus dados pessoais, em conformidade com a Lei Geral de Proteção de Dados (LGPD).">
-<meta name="theme-color" content="#F1EDE4">
-<link rel="icon" type="image/png" href="assets/favicon.png">
-<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
+<meta name="theme-color" content="#FFB81C">
+<title>Política de Privacidade | Chef Ligia do Vale</title>
+<link rel="canonical" href="https://uniaochefsempreendedores.com.br/privacidade.html">
+<meta name="description" content="Como o site da Chef Ligia do Vale trata dados pessoais, cookies e registros técnicos, conforme a LGPD.">
+<link rel="icon" href="imagens/favicon.svg" type="image/svg+xml">
 <style>
-:root{--k:#15171A;--y:#F2B705;--y-deep:#8F6E2A;--paper:#F1EDE4;--m:clamp(20px,5vw,56px);--serif:"Newsreader",Georgia,serif;--sans:"Geist",system-ui,sans-serif}
+@font-face{font-family:"Gloock";font-style:normal;font-weight:400;font-display:swap;src:url(fonts/gloock-400.woff2) format("woff2")}
+@font-face{font-family:"Figtree";font-style:normal;font-weight:300 900;font-display:swap;src:url(fonts/figtree-var.woff2) format("woff2")}
+:root{--sp-1:.25rem;--sp-2:.5rem;--sp-3:.75rem;--sp-4:1rem;--sp-5:1.5rem;--sp-6:2rem;--sp-7:3rem;--sp-9:5rem;--canvas:#FFF8EC;--branco:#FFFDF8;--sol:#FFB81C;--pitanga:#BC2350;--cacau:#3A1F1A;--cacau-2:#6A4038;--linha:#F0DCC4}
 *{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
-body{margin:0;font:400 17px/1.7 var(--sans);color:#2b2a27;-webkit-font-smoothing:antialiased;
-  background:radial-gradient(60% 40% at 12% 0%,rgba(255,255,255,.6),transparent 70%),radial-gradient(50% 35% at 95% 30%,rgba(201,162,77,.1),transparent 70%),var(--paper)}
-::selection{background:var(--y);color:var(--k)}
-a{color:inherit;text-underline-offset:.22em;text-decoration-color:rgba(143,110,42,.6)}
-a:hover{text-decoration-color:var(--y-deep)}
-a:focus-visible{outline:2px solid var(--y-deep);outline-offset:3px;border-radius:4px}
-.top{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:14px var(--m)}
-.top .logo{display:block;line-height:0}.top .logo img{height:76px;width:auto;display:block}
-.back{display:inline-flex;align-items:center;gap:10px;padding:12px 20px;border-radius:999px;background:var(--k);color:#F4F1EA;text-decoration:none;font-weight:500;font-size:15px;transition:background-color .2s,color .2s}
-.back svg{width:16px;height:16px;fill:none;stroke:var(--y);stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
-.back:hover{background:var(--y);color:var(--k)}.back:hover svg{stroke:var(--k)}
-.wrap{max-width:1120px;margin:0 auto;padding:clamp(24px,5vw,64px) var(--m) 0;display:grid;grid-template-columns:minmax(0,300px) minmax(0,1fr);gap:clamp(28px,6vw,88px);align-items:start}
-.side{position:sticky;top:24px}
-.side h1{margin:0 0 14px;font:400 clamp(2.1rem,1.4rem + 3vw,3.4rem)/1.04 var(--serif);letter-spacing:-.02em;color:var(--k);text-wrap:balance}
-.side h1 em{color:var(--y-deep)}
-.side .upd{margin:0 0 26px;font-size:14px;color:#6b6659}
-.side nav{border-top:1px solid rgba(13,13,13,.18)}
-.side nav a{display:block;padding:10px 0;border-bottom:1px solid rgba(13,13,13,.1);font-size:15px;text-decoration:none;color:#3a3a3a;transition:color .2s,padding .25s}
-.side nav a:hover{color:var(--k);padding-left:6px}
-article{min-width:0;padding-bottom:clamp(48px,7vw,96px)}
-.intro{margin:0 0 clamp(26px,4vw,44px);font:400 clamp(1.3rem,1.05rem + 1vw,1.7rem)/1.3 var(--serif);letter-spacing:-.01em;color:var(--k);max-width:34ch}
-.hl{background:linear-gradient(transparent 64%,rgba(242,183,5,.5) 64%);padding:0 .08em}
-section{padding:clamp(22px,3vw,34px) 0;border-top:1px solid rgba(13,13,13,.16);scroll-margin-top:24px}
-section h2{margin:0 0 14px;font:400 clamp(1.45rem,1.2rem + .9vw,1.9rem)/1.15 var(--serif);letter-spacing:-.012em;color:var(--k)}
-section h2::before{content:"";display:block;width:36px;height:3px;background:var(--y);margin-bottom:14px}
-section p{margin:0 0 14px;max-width:68ch}
-section ul{margin:0 0 14px;padding:0;list-style:none;max-width:68ch}
-section li{position:relative;padding:8px 0 8px 26px;border-bottom:1px dotted rgba(13,13,13,.2)}
-section li:last-child{border-bottom:0}
-section li::before{content:"";position:absolute;left:2px;top:1.05em;width:10px;height:10px;border-radius:50%;background:var(--y);box-shadow:0 0 0 3px rgba(242,183,5,.22)}
-section li b,section p b{font-weight:600;color:var(--k)}
-.card{margin:6px 0 0;padding:20px 22px;border-radius:20px;background:linear-gradient(165deg,#FCF8EF,#F5EDDB);box-shadow:inset 0 0 0 1px rgba(143,110,42,.22),0 18px 30px -26px rgba(60,45,20,.5);max-width:68ch}
-.card p{margin:0}.card p+p{margin-top:8px}
-footer{margin-top:0;background:#0B0C0E;color:#E9E5DA;border-top:1px solid rgba(242,183,5,.5)}
-footer .in{max-width:1120px;margin:0 auto;padding:30px var(--m);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px 28px;font-size:14px;color:rgba(233,229,218,.78)}
-footer p{margin:0}footer a{color:#fff;text-decoration-color:rgba(242,183,5,.6)}
-@media (max-width:860px){
-  .wrap{grid-template-columns:minmax(0,1fr)}
-  .side{position:static}
-  .side nav{display:none}
-  .top .logo img{height:64px}
-  body{font-size:16.5px}
-}
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.side nav a{transition:none}}
+body{margin:0;background:var(--canvas);color:var(--cacau);font-family:"Figtree","Segoe UI",system-ui,sans-serif;font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}
+a{color:var(--pitanga);text-underline-offset:3px}
+.top{background:var(--sol);padding:calc(14px + env(safe-area-inset-top,0px)) 16px 14px}
+.top-in{max-width:760px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.brand{font-family:"Gloock",Georgia,serif;font-size:1.25rem;color:var(--cacau);text-decoration:none}
+.back{display:inline-flex;align-items:center;gap:var(--sp-2);min-height:40px;padding:0 var(--sp-4);border-radius:999px;background:var(--cacau);color:var(--canvas);font-weight:700;font-size:.9rem;text-decoration:none}
+main{max-width:760px;margin:0 auto;padding:var(--sp-7) var(--sp-5) var(--sp-9)}
+h1{font-family:"Gloock",Georgia,serif;font-weight:400;font-size:clamp(2.2rem,8vw,3.6rem);line-height:1.04;margin:0 0 8px;text-wrap:balance}
+.upd{color:var(--cacau-2);font-size:.9rem;margin:0 0 var(--sp-5)}
+.lead{font-size:1.08rem;color:var(--cacau-2)}
+h2{font-family:"Gloock",Georgia,serif;font-weight:400;font-size:1.5rem;line-height:1.15;margin:var(--sp-6) 0 var(--sp-2)}
+p{margin:0 0 var(--sp-4)}
+ul{margin:0 0 var(--sp-4);padding-left:var(--sp-5)}
+li{margin-bottom:var(--sp-2)}
+.box{background:var(--branco);border:2px solid var(--linha);border-radius:20px;padding:var(--sp-4) var(--sp-5);margin:var(--sp-4) 0}
+.box b{display:block}
+footer{max-width:760px;margin:0 auto;padding:0 var(--sp-5) var(--sp-6);color:var(--cacau-2);font-size:.88rem}
 </style>
 </head>
 <body>
-<header class="top">
-  <a class="logo" href="index.html" aria-label="TaxSolut Consultoria Contábil, ir para a página inicial"><img src="assets/logo-taxsolut-original.webp" alt="TaxSolut Consultoria Contábil" width="900" height="685"></a>
-  <a class="back" href="index.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>Voltar ao site</a>
-</header>
+<header class="top"><div class="top-in"><a class="brand" href="./">Chef Ligia do Vale</a><a class="back" href="./">&larr; Voltar ao site</a></div></header>
+<main>
+  <h1>Política de Privacidade</h1>
+  <p class="upd">Atualizada em 07/11/2026</p>
+  <p class="lead">Esta página explica, de forma simples, o que acontece com os seus dados quando você visita o site da Chef Ligia do Vale e quando se inscreve na União Chefs Empreendedores, em linha com a Lei Geral de Proteção de Dados (Lei nº 13.709/2018, a LGPD).</p>
 
-<div class="wrap">
-  <aside class="side">
-    <h1>Política de <em>Privacidade</em></h1>
-    <p class="upd">Atualizada em 04 de novembro de 2026</p>
-    <nav aria-label="Nesta página">
-      <a href="#quem">Quem somos</a>
-      <a href="#dados">Dados que coletamos</a>
-      <a href="#bases">Por que usamos seus dados</a>
-      <a href="#compartilhamento">Compartilhamento</a>
-      <a href="#guarda">Por quanto tempo guardamos</a>
-      <a href="#direitos">Seus direitos</a>
-      <a href="#seguranca">Segurança</a>
-      <a href="#outros">Outras informações</a>
-    </nav>
-  </aside>
+  <h2>Resumo</h2>
+  <ul>
+    <li>Só usamos <b>Google Analytics</b> (carregado pelo Google Tag Manager) se você tocar em <b>Aceitar</b> no aviso de privacidade. Se recusar, nada de estatística é carregado. <b>Não usamos publicidade.</b></li>
+    <li>A <b>ficha de inscrição</b> da União Chefs Empreendedores é preenchida aqui no site e enviada por conexão criptografada à equipe da associação.</li>
+    <li>Você pode pedir acesso, correção ou exclusão dos seus dados a qualquer momento pelo WhatsApp <b>+55 11 98283-9250</b>.</li>
+  </ul>
 
-  <article>
-    <p class="intro">Tratamos seus dados com <span class="hl">transparência</span> e só para o que você precisa, de acordo com a Lei Geral de Proteção de Dados (Lei nº 13.709/2018, a LGPD).</p>
+  <h2>1. Quem é responsável</h2>
+  <p>A responsável pelo site é a <b>Chef Ligia do Vale</b>. Os dados da ficha de inscrição são tratados pela <b>União Chefs Empreendedores</b>, para analisar a inscrição. O site é desenvolvido e administrado pela <b>AM Tecnologia</b>, que atua apenas seguindo as instruções da responsável.</p>
+  <p><b>Canal para assuntos de dados pessoais:</b> WhatsApp <b>+55 11 98283-9250</b>.</p>
 
-    <section id="quem">
-      <h2>Quem somos</h2>
-      <p>A <b>TaxSolut Consultoria Contábil</b>, CNPJ 61.073.399/0001-25, é a responsável (controladora) pelos dados pessoais tratados neste site. Nosso atendimento é <b>somente online</b>; não temos endereço físico.</p>
-      <div class="card">
-        <p><b>Canais para falar sobre seus dados</b></p>
-        <p>WhatsApp: <a href="https://wa.me/5511991311931" rel="noopener noreferrer" target="_blank">(11) 99131-1931</a></p>
-        <p>Instagram: <a href="https://www.instagram.com/taxsolut_contabil/" rel="noopener noreferrer" target="_blank">@taxsolut_contabil</a></p>
-      </div>
-    </section>
+  <h2>2. Ficha de inscrição na União Chefs Empreendedores</h2>
+  <p>Ao preencher a ficha, você nos envia: e-mail, nome e sobrenome, telefone, Instagram, data de nascimento, endereço, bairro, CEP, cidade e estado, país, área de atuação, carta de apresentação e como conheceu a associação.</p>
+  <ul>
+    <li><b>Para quê:</b> analisar a sua inscrição e falar com você pelo WhatsApp sobre ela.</li>
+    <li><b>Base legal:</b> o seu consentimento ao enviar a ficha e os procedimentos preliminares para a sua entrada na associação, a seu pedido (LGPD, art. 7º, I e V).</li>
+    <li><b>Uso de imagem e voz:</b> só com a sua autorização marcada na ficha. Você pode revogar essa autorização quando quiser pelo canal acima.</li>
+    <li><b>Quem acessa:</b> apenas a equipe da União Chefs Empreendedores responsável pelas inscrições.</li>
+  </ul>
 
-    <section id="dados">
-      <h2>Dados que coletamos</h2>
-      <ul>
-        <li><b>Formulário de contato:</b> nome, WhatsApp com DDD, e-mail (opcional), assunto e mensagem (opcional). Ao enviar, o site abre o WhatsApp com a mensagem pronta e o envio só acontece quando você toca em enviar dentro do aplicativo. O site não guarda esses dados em um servidor próprio.</li>
-        <li><b>Conversas por WhatsApp e Instagram:</b> as informações que você nos passar durante o atendimento, como dados da sua empresa ou documentos.</li>
-        <li><b>Calculadora de salário líquido:</b> os valores digitados são calculados no seu próprio navegador. Não são enviados nem guardados por nós, a menos que você use o botão para mandar a simulação pelo WhatsApp.</li>
-        <li><b>Dados técnicos:</b> o navegador guarda no seu aparelho um contador simples de envios do formulário, usado apenas para evitar abusos. A hospedagem do site pode registrar endereço IP, data e hora de acesso por motivos de segurança e funcionamento. As fontes de letra são carregadas dos servidores do Google.</li>
-      </ul>
-      <p>Não usamos cookies de publicidade nem ferramentas de rastreamento ou análise de comportamento neste site.</p>
-    </section>
+  <h2>3. Estatísticas de acesso (Google Analytics)</h2>
+  <p>Se você tocar em <b>Aceitar</b> no aviso de privacidade, o site carrega o Google Tag Manager (gerenciador de tags do Google), que ativa o Google Analytics para contar visitas e entender quais partes são mais usadas (por exemplo, quantas pessoas abrem a agenda ou chamam no WhatsApp). Ele usa os cookies <b>_ga</b> e <b>_ga_&lt;código&gt;</b>, que identificam o navegador de forma pseudônima. Os recursos de publicidade e os sinais do Google ficam desligados.</p>
+  <p><b>Base legal:</b> o seu consentimento (LGPD, art. 7º, I). Se você recusar, nada disso é carregado. Para mudar a sua escolha, use o link <b>"Aviso de cookies"</b> no rodapé do site. Ao revogar, os cookies do Google Analytics são apagados do seu navegador.</p>
 
-    <section id="bases">
-      <h2>Por que usamos seus dados</h2>
-      <p>Usamos seus dados para responder ao seu contato, entender o que você precisa, enviar uma proposta e prestar o serviço contábil contratado. As bases legais, conforme o art. 7º da LGPD, são:</p>
-      <ul>
-        <li><b>Consentimento:</b> quando você preenche o formulário e nos escreve por vontade própria.</li>
-        <li><b>Procedimentos preliminares de um contrato:</b> para atender o seu pedido de proposta ou de serviço.</li>
-        <li><b>Obrigação legal ou regulatória:</b> para cumprir exigências contábeis, fiscais e trabalhistas, quando você se tornar cliente.</li>
-        <li><b>Legítimo interesse:</b> para manter o site seguro e evitar fraudes e abusos.</li>
-      </ul>
-    </section>
+  <h2>4. O que fica guardado no seu aparelho</h2>
+  <div class="box"><b>ld_privacidade (armazenamento local)</b>Guarda a sua escolha no aviso de privacidade (aceitou ou recusou as estatísticas), para não perguntar toda vez. Não contém dados pessoais.</div>
+  <div class="box"><b>agendaVista (armazenamento da sessão)</b>Lembra, só até você fechar a aba, que o pop-up da agenda já foi mostrado. Não contém dados pessoais.</div>
+  <div class="box"><b>_ga e _ga_&lt;código&gt; (cookies do Google Analytics)</b>Só existem se você aceitar as estatísticas.</div>
+  <p>Você pode apagar esses itens a qualquer momento nas configurações do navegador.</p>
 
-    <section id="compartilhamento">
-      <h2>Compartilhamento</h2>
-      <p>Não vendemos seus dados. Eles podem passar por empresas que fornecem a tecnologia que usamos, sempre no limite do necessário:</p>
-      <ul>
-        <li><b>WhatsApp e Instagram (Meta):</b> canais pelos quais conversamos com você.</li>
-        <li><b>Hospedagem do site:</b> empresa que mantém o site no ar.</li>
-        <li><b>Google Fonts:</b> fornece as fontes de letra e enxerga o seu endereço IP ao carregá-las.</li>
-        <li><b>Órgãos públicos:</b> como Receita Federal e prefeituras, somente quando for necessário para o serviço contratado ou exigido por lei.</li>
-      </ul>
-      <p>Alguns desses fornecedores podem tratar dados fora do Brasil. Nesses casos, buscamos provedores que adotem garantias de proteção compatíveis com a LGPD.</p>
-    </section>
+  <h2>5. Registros técnicos e segurança</h2>
+  <p>Para manter o site seguro e funcionando, a hospedagem (Vercel) registra dados técnicos de acesso, como o endereço IP, o horário e a página acessada, e o firewall usa esses dados para bloquear ataques e robôs. Quando ocorre um erro no site ou um bloqueio de segurança, o seu navegador envia um aviso técnico com a mensagem do erro, a página e a versão do site. Nesse aviso, o IP não é guardado em texto: ele vira um código curto, usado apenas para limitar abusos.</p>
+  <p><b>Base legal:</b> legítimo interesse em manter o site seguro (LGPD, art. 7º, IX).</p>
 
-    <section id="guarda">
-      <h2>Por quanto tempo guardamos</h2>
-      <p>Guardamos seus dados pelo tempo necessário para atender o seu pedido. Se você virar cliente, mantemos as informações durante o contrato e pelos prazos que a lei exige para documentos contábeis, fiscais e trabalhistas. Depois disso, os dados são eliminados ou anonimizados.</p>
-    </section>
+  <h2>6. Serviços de terceiros</h2>
+  <ul>
+    <li><b>WhatsApp e Instagram (Meta)</b> e <b>YouTube (Google):</b> ao clicar nesses links, você é levado a esses serviços, que têm as próprias políticas de privacidade.</li>
+    <li><b>Vercel:</b> hospedagem do site.</li>
+    <li><b>Google:</b> Google Tag Manager e Google Analytics (só com o seu consentimento) e o armazenamento das inscrições da associação.</li>
+  </ul>
+  <p>Alguns desses serviços guardam dados em servidores fora do Brasil, como nos Estados Unidos. Escolhemos fornecedores que adotam medidas de segurança e proteção de dados compatíveis com a LGPD (art. 33).</p>
 
-    <section id="direitos">
-      <h2>Seus direitos</h2>
-      <p>Você pode pedir, a qualquer momento e sem custo:</p>
-      <ul>
-        <li>confirmação de que tratamos seus dados e acesso a eles;</li>
-        <li>correção de dados incompletos, errados ou desatualizados;</li>
-        <li>anonimização, bloqueio ou eliminação de dados desnecessários ou tratados fora da lei;</li>
-        <li>portabilidade dos dados;</li>
-        <li>informação sobre com quem compartilhamos seus dados;</li>
-        <li>revogação do consentimento e eliminação dos dados tratados com base nele;</li>
-        <li>informação sobre as consequências de não dar o consentimento.</li>
-      </ul>
-      <p>Para exercer qualquer direito, fale com a gente pelo WhatsApp ou pelo Instagram indicados acima. Responderemos dentro do prazo previsto em lei. Se achar que seus dados foram tratados de forma incorreta, você também pode reclamar à Autoridade Nacional de Proteção de Dados (ANPD), em <a href="https://www.gov.br/anpd" rel="noopener noreferrer" target="_blank">gov.br/anpd</a>.</p>
-    </section>
+  <h2>7. Compartilhamento</h2>
+  <p>Não vendemos dados pessoais. Os dados só são tratados pelos prestadores necessários para o site e as inscrições funcionarem, listados acima, e pelos serviços que você escolhe usar ao clicar nos links.</p>
 
-    <section id="seguranca">
-      <h2>Segurança</h2>
-      <p>Protegemos o site com conexão segura (HTTPS), cabeçalhos de segurança, validação e limpeza dos campos preenchidos, limite de envios do formulário e acesso restrito às informações. Nenhum sistema é totalmente imune a falhas; se houver um incidente que possa trazer risco a você, avisaremos você e a ANPD conforme a LGPD.</p>
-    </section>
+  <h2>8. Por quanto tempo guardamos</h2>
+  <ul>
+    <li><b>Ficha de inscrição:</b> enquanto a inscrição estiver em análise e, se aprovada, enquanto você fizer parte da associação. Inscrições não aprovadas são eliminadas em até 12 meses.</li>
+    <li><b>Google Analytics:</b> os dados de estatística são guardados por até 2 meses; os cookies no seu navegador duram até 2 anos, ou até você recusar ou apagá-los.</li>
+    <li><b>Mensagens de WhatsApp:</b> pelo tempo necessário para atender ao seu pedido.</li>
+    <li><b>Registros técnicos:</b> seguem o prazo da hospedagem.</li>
+  </ul>
 
-    <section id="outros">
-      <h2>Outras informações</h2>
-      <ul>
-        <li><b>Crianças e adolescentes:</b> nossos serviços são voltados a empresas e a adultos. Não coletamos dados de menores de forma intencional.</li>
-        <li><b>Links externos:</b> o site tem links para WhatsApp, Instagram e portais do governo, que têm suas próprias políticas de privacidade.</li>
-        <li><b>Mudanças nesta política:</b> podemos atualizá-la para refletir melhorias ou mudanças na lei. A data da última atualização fica no topo desta página.</li>
-      </ul>
-    </section>
-  </article>
-</div>
+  <h2>9. Seus direitos</h2>
+  <p>Você pode pedir, a qualquer momento: confirmação de que tratamos seus dados, acesso, correção, anonimização ou eliminação, portabilidade, informação sobre com quem compartilhamos e a revogação de um consentimento (LGPD, art. 18). Basta nos chamar no WhatsApp <b>+55 11 98283-9250</b>. Você também pode procurar a Autoridade Nacional de Proteção de Dados (ANPD) pelo site <b>gov.br/anpd</b>.</p>
 
-<footer>
-  <div class="in">
-    <p>© 2026 TaxSolut Consultoria Contábil · CNPJ 61.073.399/0001-25</p>
-    <p><a href="index.html">Voltar ao site</a></p>
-  </div>
-</footer>
+  <h2>10. Como protegemos</h2>
+  <p>O site usa conexão criptografada (HTTPS), cabeçalhos de segurança, política de segurança de conteúdo, firewall com bloqueio de robôs e de excesso de acessos, proteção contra ataques de negação de serviço e validação dos dados que ele mesmo processa. O acesso aos sistemas é protegido por senha e verificação em duas etapas.</p>
+  <p>Se acontecer um incidente de segurança que possa causar risco ou dano a você, avisaremos você e a ANPD, como manda a lei.</p>
+
+  <h2>11. Mudanças nesta política</h2>
+  <p>Se algo mudar, esta página será atualizada com a nova data no topo. Mudanças importantes, como novos tipos de coleta, farão o aviso de privacidade aparecer de novo para você.</p>
+</main>
+<footer>© 2026 Chef Ligia do Vale</footer>
 </body>
 </html>

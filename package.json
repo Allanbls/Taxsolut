@@ -1,0 +1,9 @@
+{
+  "name": "chef-ligia-do-vale",
+  "version": "16.0.0",
+  "private": true,
+  "description": "Site est\u00e1tico da Chef Ligia do Vale (sem depend\u00eancias de runtime)",
+  "engines": {
+    "node": ">=18"
+  }
+}

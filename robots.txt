@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /api/
 
-Sitemap: https://www.taxsolut.com.br/sitemap.xml
+Sitemap: https://uniaochefsempreendedores.com.br/sitemap.xml
